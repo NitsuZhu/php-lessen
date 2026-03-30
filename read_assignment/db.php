@@ -11,6 +11,7 @@ try {
         $pass
     );
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Works";
 } catch (PDOException $e) {
     die("Verbinding mislukt: " . $e->getMessage());
 }
